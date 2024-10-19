@@ -12,3 +12,4 @@ C:\Users\josef\source\repos\TrabajoPractico\TrabajoPractico\obj\Debug\net8.0\ref
 C:\Users\josef\source\repos\TrabajoPractico\TrabajoPractico\obj\Debug\net8.0\TrabajoPractico.pdb
 C:\Users\josef\source\repos\TrabajoPractico\TrabajoPractico\obj\Debug\net8.0\TrabajoPractico.genruntimeconfig.cache
 C:\Users\josef\source\repos\TrabajoPractico\TrabajoPractico\obj\Debug\net8.0\ref\TrabajoPractico.dll
+C:\Users\josef\source\repos\TrabajoPractico\TrabajoPractico\obj\Debug\net8.0\TrabajoPractico.sourcelink.json
