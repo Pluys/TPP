@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TrabajoPractico
+namespace TrabajoPractico.Proyectos
 {
-    internal abstract class Proyecto
+    // Cambie internal por public porque no me dejaba acceder a la clase proyecto desde ProyectoMyW.
+    public abstract class Proyecto
     {
         private string _nombre;
         private int _cantidadDesarrolladores;
@@ -20,15 +21,15 @@ namespace TrabajoPractico
 
         public DateTime FechaInicio { get { return _fechaInicio; } set { _fechaInicio = value; } }
         public DateTime DuracionEstimada { get { return _duracionEstimada; } set { _duracionEstimada = value; } }
-        public EstadoProyecto Estado {get { return _estado; } set { _estado = value; } }
+        public EstadoProyecto Estado { get { return _estado; } set { _estado = value; } }
 
         public Proyecto(string nombre, int cantidadDesarrolladores, DateTime fechaInicio, DateTime duracionEstimada, EstadoProyecto estado)
         {
-            this._nombre = nombre;
-            this._cantidadDesarrolladores = cantidadDesarrolladores;
-            this._fechaInicio = fechaInicio;
-            this._duracionEstimada = duracionEstimada;
-            this._estado = estado;
+            _nombre = nombre;
+            _cantidadDesarrolladores = cantidadDesarrolladores;
+            _fechaInicio = fechaInicio;
+            _duracionEstimada = duracionEstimada;
+            _estado = estado;
         }
 
 
@@ -38,12 +39,12 @@ namespace TrabajoPractico
 
         public abstract void VisualizarProyecto();
         public abstract DateTime CalcularFechaEstimada();
-         
 
 
-       
 
- 
+
+
+
 
     }
 
