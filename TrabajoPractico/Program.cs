@@ -45,7 +45,7 @@ namespace TrabajoPractico
 
                     case 1:
                         Console.WriteLine("Opcion 1 - Agregar Proyecto");
-                        Agregar.CrearProyecto(proyectoM, proyectoW);
+                        SysProyectos.CrearProyecto(proyectoM, proyectoW);
 
                         // Estos dos foreach los agregue solo para visualizar lo cargado. No van acá
 
@@ -82,7 +82,7 @@ namespace TrabajoPractico
                         break;
 
                     case 4:
-                        Console.WriteLine("Opcion 4 - Ver Proyecto");
+                        SysProyectos.VerProyectos(proyectoM, proyectoW);
 
                         break;
 

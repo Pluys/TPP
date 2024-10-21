@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TrabajoPractico.Proyectos;
+using TrabajoPractico;
 
 namespace TrabajoPractico.Servicios
 {
-    internal class Agregar
+    public class SysProyectos
     {
 
         /* Queridos Compañeros, profesor. Les doy la bienvenida al maravilloso desastre que es mi codigo
@@ -282,6 +283,59 @@ namespace TrabajoPractico.Servicios
                         break;
                 }
             }
-    }
+        }
+
+        internal static void VerProyectos(List<ProyectoMovil> proyectoM, List<ProyectoWeb> proyectoW)
+        {
+            int desicion = 0;      //Navegador del menú
+            string userInput = ""; //Variable para verificar el parseo y evitar crasheos
+
+            while (desicion != 1 && desicion != 2 && desicion != 3)
+            {
+                Console.WriteLine("Cuales proyectos desea ver?\n" +
+                    "1. Moviles\n" +
+                    "2. Webs\n" +
+                    "3. Todos\n");
+
+                userInput = Console.ReadLine();
+                if (!string.IsNullOrEmpty(userInput))
+                {
+                    int.TryParse(userInput, out desicion);
+                }
+
+                switch (desicion)
+                {
+                    case 1:
+                        foreach(ProyectoMovil proyectoMovil in proyectoM)
+                        {
+                            proyectoMovil.VisualizarProyecto();
+                        }
+
+                        break;
+
+                    case 2:
+                        foreach (ProyectoWeb proyectoWeb in proyectoW)
+                        {
+                            proyectoWeb.VisualizarProyecto();
+                        }
+
+                        break;
+
+                    case 3:
+                        foreach (ProyectoMovil proyectoMovil in proyectoM)
+                        {
+                            proyectoMovil.VisualizarProyecto();
+                        }
+
+                        foreach (ProyectoWeb proyectoWeb in proyectoW)
+                        {
+                            proyectoWeb.VisualizarProyecto();
+                        }
+
+                        break;
+
+                }
+            }
+        }
     }
 }
