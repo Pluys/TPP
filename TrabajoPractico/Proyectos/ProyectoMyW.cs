@@ -16,8 +16,8 @@ namespace TrabajoPractico.Proyectos
             set { _tecnologiaPrincipalAsociada = value; }
         }
 
-        public ProyectoWeb(string nombre, int cantidadDesarrolladores, DateTime fechaInicio, DateTime duracionEstimada, EstadoProyecto estado, TPA tecnologiaPrincipalAsociada) :
-            base(nombre, cantidadDesarrolladores, fechaInicio, duracionEstimada, estado)
+        public ProyectoWeb(string nombre, int cantidadDesarrolladores, DateTime fechaInicio, EstadoProyecto estado, TPA tecnologiaPrincipalAsociada) :
+            base(nombre, cantidadDesarrolladores, fechaInicio, estado)
         {
             TecnologiaPrincipalAsociada = tecnologiaPrincipalAsociada;
         }
@@ -42,8 +42,8 @@ namespace TrabajoPractico.Proyectos
 
         public Po PlataformasObjetiva { get { return _plataformasObjetiva; } set { _plataformasObjetiva = value; } }
 
-        public ProyectoMovil(string nombre, int cantidadDesarrolladores, DateTime fechaInicio, DateTime duracionEstimada, EstadoProyecto estado, Po plataformasObjetiva)
-            : base(nombre, cantidadDesarrolladores, fechaInicio, duracionEstimada, estado)
+        public ProyectoMovil(string nombre, int cantidadDesarrolladores, DateTime fechaInicio, EstadoProyecto estado, Po plataformasObjetiva)
+            : base(nombre, cantidadDesarrolladores, fechaInicio,  estado)
         {
             PlataformasObjetiva = plataformasObjetiva;
         }

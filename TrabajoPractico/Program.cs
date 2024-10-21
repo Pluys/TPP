@@ -1,5 +1,6 @@
 ﻿using System.Security.Cryptography.X509Certificates;
 using TrabajoPractico.Proyectos;
+using TrabajoPractico.Servicios;
 
 namespace TrabajoPractico
 {
@@ -11,6 +12,8 @@ namespace TrabajoPractico
             string userInput = ""; //Variable para verificar el parseo y evitar crasheos
 
             List<Proyecto> proyectos = new List<Proyecto>();
+            List<ProyectoMovil> proyectoM = new List<ProyectoMovil>();
+            List<ProyectoWeb> proyectoW = new List<ProyectoWeb>();
 
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("Bienvenido.");
@@ -41,22 +44,45 @@ namespace TrabajoPractico
                         break;
 
                     case 1:
-                        Console.WriteLine("Opcion 1");
+                        Console.WriteLine("Opcion 1 - Agregar Proyecto");
+                        Agregar.CrearProyecto(proyectoM, proyectoW);
 
+                        // Estos dos foreach los agregue solo para visualizar lo cargado. No van acá
+
+                        foreach(var  proyecto in proyectoM)
+                        {
+                            Console.WriteLine($"Nombre: {proyecto.Nombre}\n" +
+                                $"cantidad de Desarrolladores: {proyecto.CantidadDesarroladores}\n" +
+                                $"Fecha inicio: {proyecto.FechaInicio}\n" +
+                                $"Duracíon Estimada: {proyecto.DuracionEstimada} \n" +
+                                $"Estado del proyecto: {proyecto.Estado} \n" +
+                                $"Plataforma objetiva: {proyecto.PlataformasObjetiva}");
+                        }
+
+                        foreach(var proyecto in proyectoW)
+                        {
+                            Console.WriteLine($"Nombre: {proyecto.Nombre}\n" +
+                                $"cantidad de Desarrolladores: {proyecto.CantidadDesarroladores}\n" +
+                                $"Fecha inicio: {proyecto.FechaInicio}\n" +
+                                $"Duracíon Estimada: {proyecto.DuracionEstimada} \n" +
+                                $"Estado del proyecto: {proyecto.Estado} \n" +
+                                $"Tecnologia Principal: {proyecto.TecnologiaPrincipalAsociada}");
+                        }
                         break;
+                        
 
                     case 2:
-                        Console.WriteLine("Opcion 2");
+                        Console.WriteLine("Opcion 2 - Quitar Proyecto");
 
                         break;
 
                     case 3:
-                        Console.WriteLine("Opcion 3");
+                        Console.WriteLine("Opcion 3 - Modificar Proyecto");
 
                         break;
 
                     case 4:
-                        Console.WriteLine("Opcion 4");
+                        Console.WriteLine("Opcion 4 - Ver Proyecto");
 
                         break;
 

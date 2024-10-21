@@ -23,12 +23,12 @@ namespace TrabajoPractico.Proyectos
         public DateTime DuracionEstimada { get { return _duracionEstimada; } set { _duracionEstimada = value; } }
         public EstadoProyecto Estado { get { return _estado; } set { _estado = value; } }
 
-        public Proyecto(string nombre, int cantidadDesarrolladores, DateTime fechaInicio, DateTime duracionEstimada, EstadoProyecto estado)
+        public Proyecto(string nombre, int cantidadDesarrolladores, DateTime fechaInicio, EstadoProyecto estado)
         {
             _nombre = nombre;
             _cantidadDesarrolladores = cantidadDesarrolladores;
             _fechaInicio = fechaInicio;
-            _duracionEstimada = duracionEstimada;
+            // _duracionEstimada = duracionEstimada;
             _estado = estado;
         }
 
