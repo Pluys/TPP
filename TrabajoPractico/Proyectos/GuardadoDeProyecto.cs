@@ -9,78 +9,73 @@ namespace TrabajoPractico.Proyectos
 {
     internal abstract class GuardadoDeProyecto
     {
-        static List<Proyecto> proyectos = new List<Proyecto>();
-        static string guardadoDatos = "guardadoDatos.txt";
-
-        // internal void AgregarProyecto()
-        /* {
-
-           Console.WriteLine("Ingrese nombre del proyecto:");
-           string nombre = Console.ReadLine();
-           Console.WriteLine("Ingrese el estado del proyecto:");
-           EstadoProyecto estado = (EstadoProyecto)Enum.Parse(typeof(EstadoProyecto), Console.ReadLine());
-           Console.WriteLine("Ingrese la cantidad de desarroladores:");
-           int cantidadDesarrolladores = int.Parse(Console.ReadLine());
-           Console.WriteLine("ingrese la fecha del inicio:");
-           DateTime fechaInicio = DateTime.Parse(Console.ReadLine());
+        static string guardadoDatosWeb= "guardadoDatosWeb.txt";
+        static string guardadoDatosMovil = "guardadoDatosMovil.txt";
 
 
-           proyectos.Add(new Proyecto(nombre, estado, cantidadDesarrolladores, fechaInicio ));
-
-           Console.WriteLine("proyecto añadido correctamente:");
-
-
-
-
-       }
-      */
-        //lo voy a corregir mas tarde xd
-
-
-        public static void MostrarContacto()
-        {
-            Console.WriteLine("Lista de contactos:");
-            foreach (var proyecto in proyectos)
-            {
-                Console.WriteLine(proyecto);
-            }
-        }
-
-        public static void GuardarProyecto()
+        public static void GuardarProyecto(List<ProyectoWeb> proyectosW, List<ProyectoMovil> proyectosM)
         {
 
-            using (StreamWriter writer = new StreamWriter(guardadoDatos))
+            using (StreamWriter writer = new StreamWriter(guardadoDatosWeb))
             {
-                foreach (var proyecto in proyectos)
+                foreach (var proyecto in proyectosW)
                 {
-                    writer.WriteLine($"{proyecto.Nombre}, {proyecto.Estado}, {proyecto.CantidadDesarroladores}, {proyecto.FechaInicio}");
+                    writer.WriteLine($"{proyecto.Nombre},{proyecto.CantidadDesarroladores},{proyecto.FechaInicio},{proyecto.Estado},{proyecto.TecnologiaPrincipalAsociada}");
                 }
             }
-            Console.WriteLine("Contacto Guardado exitosamente");
+            Console.WriteLine("Proyecto guardado exitosamente");
+
+            using (StreamWriter writer = new StreamWriter(guardadoDatosMovil))
+            {
+                foreach (var proyecto in proyectosM)
+                {
+                    writer.WriteLine($"{proyecto.Nombre},{proyecto.CantidadDesarroladores},{proyecto.FechaInicio},{proyecto.Estado},{proyecto.PlataformasObjetiva}");
+                }
+            }
+            Console.WriteLine("Proyecto guardado exitosamente");
 
         }
 
 
-        public static void CargarProyecto()
+        public static void CargarProyecto(List<ProyectoWeb> proyectosW, List<ProyectoMovil> proyectosM)
         {
-            if (File.Exists(guardadoDatos))
+            if (File.Exists(guardadoDatosWeb))
             {
-                using (StreamReader reader = new StreamReader(guardadoDatos))
+                using (StreamReader reader = new StreamReader(guardadoDatosWeb))
                 {
                     string linea;
                     while ((linea = reader.ReadLine()) != null)
                     {
-                        string[] datos = linea.Split('|');
+                        string[] datos = linea.Split(',');
                         string nombre = datos[0];
                         int cantidadDesarrolladores = int.Parse(datos[1]);
+                        DateTime fechaInicio = DateTime.Parse(datos[2]);
+                        EstadoProyecto estado = (EstadoProyecto)Enum.Parse(typeof(EstadoProyecto), datos[3]);
+                        TPA tecnologiaPrincipalAsociada =(TPA) Enum.Parse(typeof(TPA), datos[4]);
 
-                        //  EstadoProyecto estado = Enum.
+                        proyectosW.Add(new ProyectoWeb(nombre, cantidadDesarrolladores, fechaInicio, estado, tecnologiaPrincipalAsociada));
+                        
+                    
+                    }
+                }
+                Console.WriteLine("Proyecto cargado correctamente");
+            } if (File.Exists(guardadoDatosMovil))
+            {
+                using (StreamReader reader = new StreamReader(guardadoDatosMovil))
+                {
+                    string linea;
+                    while ((linea = reader.ReadLine()) != null)
+                    {
+                        string[] datos = linea.Split(',');
+                        string nombre = datos[0];
+                        int cantidadDesarrolladores = int.Parse(datos[1]);
+                        DateTime fechaInicio = DateTime.Parse(datos[2]);
+                        EstadoProyecto estado = (EstadoProyecto)Enum.Parse(typeof(EstadoProyecto), datos[3]);
+                        Po plataformasObjetivas = (Po)Enum.Parse(typeof(Po), datos[4]);
 
+                        proyectosM.Add(new ProyectoMovil(nombre, cantidadDesarrolladores, fechaInicio, estado,plataformasObjetivas ));
 
-                        //     proyectos.Add(new Proyecto(nombre, cantidadDesarrolladores, fechaInicio, estado));
-
-                        //puede ser que se corrija creando una clase la cual herede los parametros de proyecto y usar esa clase heredada en vez de proyecto
-                        //
+                        
                     }
                 }
                 Console.WriteLine("Proyecto cargado correctamente");

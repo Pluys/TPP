@@ -14,6 +14,7 @@ namespace TrabajoPractico
             List<Proyecto> proyectos = new List<Proyecto>();
             List<ProyectoMovil> proyectoM = new List<ProyectoMovil>();
             List<ProyectoWeb> proyectoW = new List<ProyectoWeb>();
+            GuardadoDeProyecto.CargarProyecto(proyectoW, proyectoM);
 
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("Bienvenido.");
@@ -40,7 +41,7 @@ namespace TrabajoPractico
                 {
                     case 0:
                         Console.WriteLine("Guardar y salir");
-
+                        GuardadoDeProyecto.GuardarProyecto(proyectoW,proyectoM);
                         break;
 
                     case 1:
