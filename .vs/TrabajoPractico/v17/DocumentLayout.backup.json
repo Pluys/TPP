@@ -1,30 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\josef\\source\\repos\\TrabajoPractico\\",
+  "WorkspaceRootPath": "C:\\Users\\lauta\\Desktop\\Proyecto\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{15FCF0BA-F948-40BC-9981-49C49D47D21A}|TrabajoPractico\\TrabajoPractico.csproj|c:\\users\\josef\\source\\repos\\trabajopractico\\trabajopractico\\proyectos\\guardadodeproyecto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{15FCF0BA-F948-40BC-9981-49C49D47D21A}|TrabajoPractico\\TrabajoPractico.csproj|solutionrelative:trabajopractico\\proyectos\\guardadodeproyecto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{15FCF0BA-F948-40BC-9981-49C49D47D21A}|TrabajoPractico\\TrabajoPractico.csproj|c:\\users\\josef\\source\\repos\\trabajopractico\\trabajopractico\\proyectos\\proyecto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{15FCF0BA-F948-40BC-9981-49C49D47D21A}|TrabajoPractico\\TrabajoPractico.csproj|solutionrelative:trabajopractico\\proyectos\\proyecto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{15FCF0BA-F948-40BC-9981-49C49D47D21A}|TrabajoPractico\\TrabajoPractico.csproj|c:\\users\\josef\\source\\repos\\trabajopractico\\trabajopractico\\proyectos\\proyectomyw.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{15FCF0BA-F948-40BC-9981-49C49D47D21A}|TrabajoPractico\\TrabajoPractico.csproj|c:\\users\\lauta\\desktop\\proyecto\\trabajopractico\\proyectos\\proyectomyw.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{15FCF0BA-F948-40BC-9981-49C49D47D21A}|TrabajoPractico\\TrabajoPractico.csproj|solutionrelative:trabajopractico\\proyectos\\proyectomyw.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{15FCF0BA-F948-40BC-9981-49C49D47D21A}|TrabajoPractico\\TrabajoPractico.csproj|c:\\users\\josef\\source\\repos\\trabajopractico\\trabajopractico\\servicios\\sistemaproyectos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{15FCF0BA-F948-40BC-9981-49C49D47D21A}|TrabajoPractico\\TrabajoPractico.csproj|c:\\users\\lauta\\desktop\\proyecto\\trabajopractico\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15FCF0BA-F948-40BC-9981-49C49D47D21A}|TrabajoPractico\\TrabajoPractico.csproj|solutionrelative:trabajopractico\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15FCF0BA-F948-40BC-9981-49C49D47D21A}|TrabajoPractico\\TrabajoPractico.csproj|c:\\users\\lauta\\desktop\\proyecto\\trabajopractico\\servicios\\sistemaproyectos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{15FCF0BA-F948-40BC-9981-49C49D47D21A}|TrabajoPractico\\TrabajoPractico.csproj|solutionrelative:trabajopractico\\servicios\\sistemaproyectos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{15FCF0BA-F948-40BC-9981-49C49D47D21A}|TrabajoPractico\\TrabajoPractico.csproj|c:\\users\\josef\\source\\repos\\trabajopractico\\trabajopractico\\enum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{15FCF0BA-F948-40BC-9981-49C49D47D21A}|TrabajoPractico\\TrabajoPractico.csproj|solutionrelative:trabajopractico\\enum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{15FCF0BA-F948-40BC-9981-49C49D47D21A}|TrabajoPractico\\TrabajoPractico.csproj|c:\\users\\lauta\\desktop\\proyecto\\trabajopractico\\proyectos\\proyecto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15FCF0BA-F948-40BC-9981-49C49D47D21A}|TrabajoPractico\\TrabajoPractico.csproj|solutionrelative:trabajopractico\\proyectos\\proyecto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{15FCF0BA-F948-40BC-9981-49C49D47D21A}|TrabajoPractico\\TrabajoPractico.csproj|c:\\users\\josef\\source\\repos\\trabajopractico\\trabajopractico\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{15FCF0BA-F948-40BC-9981-49C49D47D21A}|TrabajoPractico\\TrabajoPractico.csproj|solutionrelative:trabajopractico\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{15FCF0BA-F948-40BC-9981-49C49D47D21A}|TrabajoPractico\\TrabajoPractico.csproj|c:\\users\\lauta\\desktop\\proyecto\\trabajopractico\\proyectos\\guardadodeproyecto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15FCF0BA-F948-40BC-9981-49C49D47D21A}|TrabajoPractico\\TrabajoPractico.csproj|solutionrelative:trabajopractico\\proyectos\\guardadodeproyecto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15FCF0BA-F948-40BC-9981-49C49D47D21A}|TrabajoPractico\\TrabajoPractico.csproj|c:\\users\\lauta\\desktop\\proyecto\\trabajopractico\\enum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15FCF0BA-F948-40BC-9981-49C49D47D21A}|TrabajoPractico\\TrabajoPractico.csproj|solutionrelative:trabajopractico\\enum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,86 +34,81 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "GuardadoDeProyecto.cs",
-              "DocumentMoniker": "C:\\Users\\josef\\source\\repos\\TrabajoPractico\\TrabajoPractico\\Proyectos\\GuardadoDeProyecto.cs",
+              "DocumentMoniker": "C:\\Users\\lauta\\Desktop\\Proyecto\\TrabajoPractico\\Proyectos\\GuardadoDeProyecto.cs",
               "RelativeDocumentMoniker": "TrabajoPractico\\Proyectos\\GuardadoDeProyecto.cs",
-              "ToolTip": "C:\\Users\\josef\\source\\repos\\TrabajoPractico\\TrabajoPractico\\Proyectos\\GuardadoDeProyecto.cs*",
-              "RelativeToolTip": "TrabajoPractico\\Proyectos\\GuardadoDeProyecto.cs*",
-              "ViewState": "AgIAADUAAAAAAAAAAAAgwFsAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\lauta\\Desktop\\Proyecto\\TrabajoPractico\\Proyectos\\GuardadoDeProyecto.cs",
+              "RelativeToolTip": "TrabajoPractico\\Proyectos\\GuardadoDeProyecto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-22T02:13:27.379Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "enum.cs",
-              "DocumentMoniker": "C:\\Users\\josef\\source\\repos\\TrabajoPractico\\TrabajoPractico\\enum.cs",
+              "DocumentMoniker": "C:\\Users\\lauta\\Desktop\\Proyecto\\TrabajoPractico\\enum.cs",
               "RelativeDocumentMoniker": "TrabajoPractico\\enum.cs",
-              "ToolTip": "C:\\Users\\josef\\source\\repos\\TrabajoPractico\\TrabajoPractico\\enum.cs",
+              "ToolTip": "C:\\Users\\lauta\\Desktop\\Proyecto\\TrabajoPractico\\enum.cs",
               "RelativeToolTip": "TrabajoPractico\\enum.cs",
               "ViewState": "AgIAABkAAAAAAAAAAAA1wAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T20:28:30.294Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-21T20:28:30.294Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "ProyectoMyW.cs",
-              "DocumentMoniker": "C:\\Users\\josef\\source\\repos\\TrabajoPractico\\TrabajoPractico\\Proyectos\\ProyectoMyW.cs",
+              "DocumentMoniker": "C:\\Users\\lauta\\Desktop\\Proyecto\\TrabajoPractico\\Proyectos\\ProyectoMyW.cs",
               "RelativeDocumentMoniker": "TrabajoPractico\\Proyectos\\ProyectoMyW.cs",
-              "ToolTip": "C:\\Users\\josef\\source\\repos\\TrabajoPractico\\TrabajoPractico\\Proyectos\\ProyectoMyW.cs*",
-              "RelativeToolTip": "TrabajoPractico\\Proyectos\\ProyectoMyW.cs*",
-              "ViewState": "AgIAABgAAAAAAAAAAAAowBUAAABGAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\lauta\\Desktop\\Proyecto\\TrabajoPractico\\Proyectos\\ProyectoMyW.cs",
+              "RelativeToolTip": "TrabajoPractico\\Proyectos\\ProyectoMyW.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAowCUAAABaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-21T01:23:35.688Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Proyecto.cs",
-              "DocumentMoniker": "C:\\Users\\josef\\source\\repos\\TrabajoPractico\\TrabajoPractico\\Proyectos\\Proyecto.cs",
+              "DocumentMoniker": "C:\\Users\\lauta\\Desktop\\Proyecto\\TrabajoPractico\\Proyectos\\Proyecto.cs",
               "RelativeDocumentMoniker": "TrabajoPractico\\Proyectos\\Proyecto.cs",
-              "ToolTip": "C:\\Users\\josef\\source\\repos\\TrabajoPractico\\TrabajoPractico\\Proyectos\\Proyecto.cs*",
-              "RelativeToolTip": "TrabajoPractico\\Proyectos\\Proyecto.cs*",
-              "ViewState": "AgIAABkAAAAAAAAAAAAcwCMAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\lauta\\Desktop\\Proyecto\\TrabajoPractico\\Proyectos\\Proyecto.cs",
+              "RelativeToolTip": "TrabajoPractico\\Proyectos\\Proyecto.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-21T01:23:34.236Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "SistemaProyectos.cs",
-              "DocumentMoniker": "C:\\Users\\josef\\source\\repos\\TrabajoPractico\\TrabajoPractico\\Servicios\\SistemaProyectos.cs",
+              "DocumentMoniker": "C:\\Users\\lauta\\Desktop\\Proyecto\\TrabajoPractico\\Servicios\\SistemaProyectos.cs",
               "RelativeDocumentMoniker": "TrabajoPractico\\Servicios\\SistemaProyectos.cs",
-              "ToolTip": "C:\\Users\\josef\\source\\repos\\TrabajoPractico\\TrabajoPractico\\Servicios\\SistemaProyectos.cs*",
-              "RelativeToolTip": "TrabajoPractico\\Servicios\\SistemaProyectos.cs*",
-              "ViewState": "AgIAABIBAAAAAAAAAAAqwDUBAAAZAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\lauta\\Desktop\\Proyecto\\TrabajoPractico\\Servicios\\SistemaProyectos.cs",
+              "RelativeToolTip": "TrabajoPractico\\Servicios\\SistemaProyectos.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAgwCkAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-21T01:23:30.315Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\josef\\source\\repos\\TrabajoPractico\\TrabajoPractico\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\lauta\\Desktop\\Proyecto\\TrabajoPractico\\Program.cs",
               "RelativeDocumentMoniker": "TrabajoPractico\\Program.cs",
-              "ToolTip": "C:\\Users\\josef\\source\\repos\\TrabajoPractico\\TrabajoPractico\\Program.cs",
+              "ToolTip": "C:\\Users\\lauta\\Desktop\\Proyecto\\TrabajoPractico\\Program.cs",
               "RelativeToolTip": "TrabajoPractico\\Program.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwG0AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAACUAAAAAAAAAAAAAAC8AAABJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-21T01:23:20.858Z",
               "EditorCaption": ""

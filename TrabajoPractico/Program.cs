@@ -46,28 +46,6 @@ namespace TrabajoPractico
                     case 1:
                         Console.WriteLine("Opcion 1 - Agregar Proyecto");
                         SysProyectos.CrearProyecto(proyectoM, proyectoW);
-
-                        // Estos dos foreach los agregue solo para visualizar lo cargado. No van acá
-
-                        foreach(var  proyecto in proyectoM)
-                        {
-                            Console.WriteLine($"Nombre: {proyecto.Nombre}\n" +
-                                $"cantidad de Desarrolladores: {proyecto.CantidadDesarroladores}\n" +
-                                $"Fecha inicio: {proyecto.FechaInicio}\n" +
-                                $"Duracíon Estimada: {proyecto.DuracionEstimada} \n" +
-                                $"Estado del proyecto: {proyecto.Estado} \n" +
-                                $"Plataforma objetiva: {proyecto.PlataformasObjetiva}");
-                        }
-
-                        foreach(var proyecto in proyectoW)
-                        {
-                            Console.WriteLine($"Nombre: {proyecto.Nombre}\n" +
-                                $"cantidad de Desarrolladores: {proyecto.CantidadDesarroladores}\n" +
-                                $"Fecha inicio: {proyecto.FechaInicio}\n" +
-                                $"Duracíon Estimada: {proyecto.DuracionEstimada} \n" +
-                                $"Estado del proyecto: {proyecto.Estado} \n" +
-                                $"Tecnologia Principal: {proyecto.TecnologiaPrincipalAsociada}");
-                        }
                         break;
                         
 

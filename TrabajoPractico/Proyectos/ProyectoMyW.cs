@@ -9,6 +9,7 @@ namespace TrabajoPractico.Proyectos
     public  class ProyectoWeb : Proyecto
     {
         private TPA _tecnologiaPrincipalAsociada;
+        public const int DuracionPromedio = 120;
 
         public TPA TecnologiaPrincipalAsociada
         {
@@ -24,12 +25,17 @@ namespace TrabajoPractico.Proyectos
 
         public override void VisualizarProyecto()
         {
-
+            Console.WriteLine($"Nombre: {Nombre}\n" +
+                $"Cantidad de Desarrolladores: {CantidadDesarroladores}\n" +
+                $"Fecha inicio: {FechaInicio}\n" +
+                $"Fecha Estimada de duracion: {DuracionEstimada}\n" +
+                $"Estado del Proyecto {Estado}\n" +
+                $"Teconologia Principal Asociada {TecnologiaPrincipalAsociada}\n");
         }
 
         public override DateTime CalcularFechaEstimada()
         {
-            return DateTime.Now; // ESto no va, solo esta puesto para que no de error el Retun
+            return DateTime.Now.AddDays(DuracionPromedio - CantidadDesarroladores * 1.25);
             // Recomiendo que hagamos un calculo tipo Constante de lo que suele tardar un proyecto
             // Menos cantidad de trabajadores * 1.25 o algo así
             // Y ese valor se lo sumamos al día de la fecha y obtenemos el estimado. Es solo una sugerencia
@@ -39,6 +45,7 @@ namespace TrabajoPractico.Proyectos
     public class ProyectoMovil : Proyecto
     {
         private Po _plataformasObjetiva;
+        public const int DuracionPromedio = 90;
 
         public Po PlataformasObjetiva { get { return _plataformasObjetiva; } set { _plataformasObjetiva = value; } }
 
@@ -50,12 +57,17 @@ namespace TrabajoPractico.Proyectos
 
         public override void VisualizarProyecto()
         {
-
+            Console.WriteLine($"Nombre: {Nombre}\n" +
+                $"Cantidad de Desarrolladores: {CantidadDesarroladores}\n" +
+                $"Fecha inicio: {FechaInicio}\n" +
+                $"Fecha Estimada de duracion: {DuracionEstimada}\n" +
+                $"Estado del Proyecto {Estado}\n" +
+                $"Plataformas objetivas {PlataformasObjetiva}\n");
         }
 
         public override DateTime CalcularFechaEstimada()
         {
-            return DateTime.Now; // ESto no va, solo esta puesto para que no de error el Retun
+            return DateTime.Now.AddDays(DuracionPromedio - CantidadDesarroladores * 1.25);
             // Recomiendo que hagamos un calculo tipo Constante de lo que suele tardar un proyecto
             // Menos cantidad de trabajadores * 1.25 o algo así
             // Y ese valor se lo sumamos al día de la fecha y obtenemos el estimado. Es solo una sugerencia

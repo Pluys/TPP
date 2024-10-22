@@ -12,29 +12,29 @@ namespace TrabajoPractico.Proyectos
         static List<Proyecto> proyectos = new List<Proyecto>();
         static string guardadoDatos = "guardadoDatos.txt";
 
-       // internal void AgregarProyecto()
-         /* {
+        // internal void AgregarProyecto()
+        /* {
 
-            Console.WriteLine("Ingrese nombre del proyecto:");
-            string nombre = Console.ReadLine();
-            Console.WriteLine("Ingrese el estado del proyecto:");
-            EstadoProyecto estado = (EstadoProyecto)Enum.Parse(typeof(EstadoProyecto), Console.ReadLine());
-            Console.WriteLine("Ingrese la cantidad de desarroladores:");
-            int cantidadDesarrolladores = int.Parse(Console.ReadLine());
-            Console.WriteLine("ingrese la fecha del inicio:");
-            DateTime fechaInicio = DateTime.Parse(Console.ReadLine());
-     
-
-            proyectos.Add(new Proyecto(nombre, estado, cantidadDesarrolladores, fechaInicio ));
-
-            Console.WriteLine("proyecto añadido correctamente:");
+           Console.WriteLine("Ingrese nombre del proyecto:");
+           string nombre = Console.ReadLine();
+           Console.WriteLine("Ingrese el estado del proyecto:");
+           EstadoProyecto estado = (EstadoProyecto)Enum.Parse(typeof(EstadoProyecto), Console.ReadLine());
+           Console.WriteLine("Ingrese la cantidad de desarroladores:");
+           int cantidadDesarrolladores = int.Parse(Console.ReadLine());
+           Console.WriteLine("ingrese la fecha del inicio:");
+           DateTime fechaInicio = DateTime.Parse(Console.ReadLine());
 
 
+           proyectos.Add(new Proyecto(nombre, estado, cantidadDesarrolladores, fechaInicio ));
 
-          
-        }
-       */
-         //lo voy a corregir mas tarde xd
+           Console.WriteLine("proyecto añadido correctamente:");
+
+
+
+
+       }
+      */
+        //lo voy a corregir mas tarde xd
 
 
         public static void MostrarContacto()
@@ -51,12 +51,12 @@ namespace TrabajoPractico.Proyectos
 
             using (StreamWriter writer = new StreamWriter(guardadoDatos))
             {
-                foreach (var proyecto  in proyectos)
+                foreach (var proyecto in proyectos)
                 {
                     writer.WriteLine($"{proyecto.Nombre}, {proyecto.Estado}, {proyecto.CantidadDesarroladores}, {proyecto.FechaInicio}");
                 }
             }
-            Console.WriteLine( "Contacto Guardado exitosamente");
+            Console.WriteLine("Contacto Guardado exitosamente");
 
         }
 
@@ -74,19 +74,20 @@ namespace TrabajoPractico.Proyectos
                         string nombre = datos[0];
                         int cantidadDesarrolladores = int.Parse(datos[1]);
 
-                      //  EstadoProyecto estado = Enum.
+                        //  EstadoProyecto estado = Enum.
 
-   
-              //     proyectos.Add(new Proyecto(nombre, cantidadDesarrolladores, fechaInicio, estado));
-                 
-                    //puede ser que se corrija creando una clase la cual herede los parametros de proyecto y usar esa clase heredada en vez de proyecto
-                    //
+
+                        //     proyectos.Add(new Proyecto(nombre, cantidadDesarrolladores, fechaInicio, estado));
+
+                        //puede ser que se corrija creando una clase la cual herede los parametros de proyecto y usar esa clase heredada en vez de proyecto
+                        //
                     }
                 }
                 Console.WriteLine("Proyecto cargado correctamente");
             }
         }
 
-} //cuando funcione pasar la funciones al menú 
+    }
+}//cuando funcione pasar la funciones al menú 
     
 
