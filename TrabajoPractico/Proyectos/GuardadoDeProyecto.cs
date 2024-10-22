@@ -20,7 +20,7 @@ namespace TrabajoPractico.Proyectos
             {
                 foreach (var proyecto in proyectosW)
                 {
-                    writer.WriteLine($"{proyecto.Nombre},{proyecto.CantidadDesarroladores},{proyecto.FechaInicio},{proyecto.Estado},{proyecto.TecnologiaPrincipalAsociada}");
+                    writer.WriteLine($"{proyecto.Nombre},{proyecto.CantidadDesarroladores},{proyecto.FechaInicio},{proyecto.DuracionEstimada},{proyecto.Estado},{proyecto.TecnologiaPrincipalAsociada}");
                 }
             }
             Console.WriteLine("Proyecto guardado exitosamente");
@@ -29,7 +29,7 @@ namespace TrabajoPractico.Proyectos
             {
                 foreach (var proyecto in proyectosM)
                 {
-                    writer.WriteLine($"{proyecto.Nombre},{proyecto.CantidadDesarroladores},{proyecto.FechaInicio},{proyecto.Estado},{proyecto.PlataformasObjetiva}");
+                    writer.WriteLine($"{proyecto.Nombre},{proyecto.CantidadDesarroladores},{proyecto.FechaInicio},{proyecto.DuracionEstimada},{proyecto.Estado},{proyecto.PlataformasObjetiva}");
                 }
             }
             Console.WriteLine("Proyecto guardado exitosamente");
@@ -50,10 +50,11 @@ namespace TrabajoPractico.Proyectos
                         string nombre = datos[0];
                         int cantidadDesarrolladores = int.Parse(datos[1]);
                         DateTime fechaInicio = DateTime.Parse(datos[2]);
-                        EstadoProyecto estado = (EstadoProyecto)Enum.Parse(typeof(EstadoProyecto), datos[3]);
-                        TPA tecnologiaPrincipalAsociada =(TPA) Enum.Parse(typeof(TPA), datos[4]);
+                        DateTime duracionEstimada = DateTime.Parse(datos[3]);
+                        EstadoProyecto estado = (EstadoProyecto)Enum.Parse(typeof(EstadoProyecto), datos[4]);
+                        TPA tecnologiaPrincipalAsociada =(TPA) Enum.Parse(typeof(TPA), datos[5]);
 
-                        proyectosW.Add(new ProyectoWeb(nombre, cantidadDesarrolladores, fechaInicio, estado, tecnologiaPrincipalAsociada));
+                        proyectosW.Add(new ProyectoWeb(nombre, cantidadDesarrolladores, fechaInicio, duracionEstimada, estado, tecnologiaPrincipalAsociada));
                         
                     
                     }
@@ -70,10 +71,11 @@ namespace TrabajoPractico.Proyectos
                         string nombre = datos[0];
                         int cantidadDesarrolladores = int.Parse(datos[1]);
                         DateTime fechaInicio = DateTime.Parse(datos[2]);
-                        EstadoProyecto estado = (EstadoProyecto)Enum.Parse(typeof(EstadoProyecto), datos[3]);
-                        Po plataformasObjetivas = (Po)Enum.Parse(typeof(Po), datos[4]);
+                        DateTime fechaEstimada = DateTime.Parse(datos[3]);
+                        EstadoProyecto estado = (EstadoProyecto)Enum.Parse(typeof(EstadoProyecto), datos[4]);
+                        Po plataformasObjetivas = (Po)Enum.Parse(typeof(Po), datos[5]);
 
-                        proyectosM.Add(new ProyectoMovil(nombre, cantidadDesarrolladores, fechaInicio, estado,plataformasObjetivas ));
+                        proyectosM.Add(new ProyectoMovil(nombre, cantidadDesarrolladores, fechaInicio, fechaEstimada, estado,plataformasObjetivas));
 
                         
                     }

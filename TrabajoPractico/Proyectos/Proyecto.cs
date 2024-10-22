@@ -32,7 +32,14 @@ namespace TrabajoPractico.Proyectos
             _estado = estado;
         }
 
-
+        public Proyecto(string nombre, int cantidadDesarrolladores, DateTime fechaInicio, DateTime duracionEstimada, EstadoProyecto estado)
+        {
+            _nombre = nombre;
+            _cantidadDesarrolladores = cantidadDesarrolladores;
+            _fechaInicio = fechaInicio;
+            _duracionEstimada = duracionEstimada;
+            _estado = estado;
+        }
 
 
 
