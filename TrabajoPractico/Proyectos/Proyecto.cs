@@ -28,7 +28,7 @@ namespace TrabajoPractico.Proyectos
             _nombre = nombre;
             _cantidadDesarrolladores = cantidadDesarrolladores;
             _fechaInicio = fechaInicio;
-            // _duracionEstimada = duracionEstimada;
+            //_duracionEstimada = duracionEstimada;
             _estado = estado;
         }
 

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TrabajoPractico.Proyectos
 {
-    public class ProyectoWeb : Proyecto
+    public  class ProyectoWeb : Proyecto
     {
         private TPA _tecnologiaPrincipalAsociada;
 

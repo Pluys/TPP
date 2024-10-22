@@ -287,10 +287,10 @@ namespace TrabajoPractico.Servicios
 
         internal static void VerProyectos(List<ProyectoMovil> proyectoM, List<ProyectoWeb> proyectoW)
         {
-            int desicion = 0;      //Navegador del menú
+            int decision = 0;      //Navegador del menú
             string userInput = ""; //Variable para verificar el parseo y evitar crasheos
 
-            while (desicion != 1 && desicion != 2 && desicion != 3)
+            while (decision != 1 && decision != 2 && decision != 3)
             {
                 Console.WriteLine("Cuales proyectos desea ver?\n" +
                     "1. Moviles\n" +
@@ -300,10 +300,10 @@ namespace TrabajoPractico.Servicios
                 userInput = Console.ReadLine();
                 if (!string.IsNullOrEmpty(userInput))
                 {
-                    int.TryParse(userInput, out desicion);
+                    int.TryParse(userInput, out decision);
                 }
 
-                switch (desicion)
+                switch (decision)
                 {
                     case 1:
                         foreach(ProyectoMovil proyectoMovil in proyectoM)

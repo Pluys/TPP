@@ -8,7 +8,7 @@ namespace TrabajoPractico
     {
         static void Main()
         {
-            int desicion = 10;     //Navegador del menú
+            int decision = 10;     //Navegador del menú
             string userInput = ""; //Variable para verificar el parseo y evitar crasheos
 
             List<Proyecto> proyectos = new List<Proyecto>();
@@ -19,9 +19,9 @@ namespace TrabajoPractico
             Console.WriteLine("Bienvenido.");
             Console.ForegroundColor = ConsoleColor.White;
 
-            while (desicion != 0 && desicion != 5) //Menu
+            while (decision != 0 && decision != 5) //Menu
             {
-                desicion = 10;
+                decision = 10;
                 Console.WriteLine("---Menu---\n" +
                     "0. Guardar y salir\n" +
                     "1. Agregar proyecto\n" +
@@ -33,10 +33,10 @@ namespace TrabajoPractico
                 userInput = Console.ReadLine();
                 if (!string.IsNullOrEmpty(userInput))
                 {
-                    int.TryParse(userInput, out desicion);
+                    int.TryParse(userInput, out decision);
                 }
 
-                switch (desicion) //Opciones
+                switch (decision) //Opciones
                 {
                     case 0:
                         Console.WriteLine("Guardar y salir");
