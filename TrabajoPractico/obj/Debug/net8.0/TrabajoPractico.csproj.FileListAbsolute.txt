@@ -35,3 +35,10 @@ C:\Users\estudiante\Desktop\Dev\C# (2do Cuatrimestre)\Practicas\Trabajo practico
 C:\Users\estudiante\Desktop\Dev\C# (2do Cuatrimestre)\Practicas\Trabajo practico\TrabajoPractico\obj\Debug\net8.0\TrabajoPractico.dll
 C:\Users\estudiante\Desktop\Dev\C# (2do Cuatrimestre)\Practicas\Trabajo practico\TrabajoPractico\obj\Debug\net8.0\refint\TrabajoPractico.dll
 C:\Users\estudiante\Desktop\Dev\C# (2do Cuatrimestre)\Practicas\Trabajo practico\TrabajoPractico\obj\Debug\net8.0\TrabajoPractico.pdb
+C:\Users\estudiante\Desktop\Dev\C# (2do Cuatrimestre)\Practicas\Trabajo practico\TrabajoPractico\bin\Debug\net8.0\TrabajoPractico.exe
+C:\Users\estudiante\Desktop\Dev\C# (2do Cuatrimestre)\Practicas\Trabajo practico\TrabajoPractico\bin\Debug\net8.0\TrabajoPractico.deps.json
+C:\Users\estudiante\Desktop\Dev\C# (2do Cuatrimestre)\Practicas\Trabajo practico\TrabajoPractico\bin\Debug\net8.0\TrabajoPractico.runtimeconfig.json
+C:\Users\estudiante\Desktop\Dev\C# (2do Cuatrimestre)\Practicas\Trabajo practico\TrabajoPractico\bin\Debug\net8.0\TrabajoPractico.dll
+C:\Users\estudiante\Desktop\Dev\C# (2do Cuatrimestre)\Practicas\Trabajo practico\TrabajoPractico\bin\Debug\net8.0\TrabajoPractico.pdb
+C:\Users\estudiante\Desktop\Dev\C# (2do Cuatrimestre)\Practicas\Trabajo practico\TrabajoPractico\obj\Debug\net8.0\TrabajoPractico.genruntimeconfig.cache
+C:\Users\estudiante\Desktop\Dev\C# (2do Cuatrimestre)\Practicas\Trabajo practico\TrabajoPractico\obj\Debug\net8.0\ref\TrabajoPractico.dll

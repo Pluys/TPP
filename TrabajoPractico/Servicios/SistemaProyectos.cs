@@ -292,12 +292,13 @@ namespace TrabajoPractico.Servicios
 
             Console.Clear();
 
-            while(decision < 1 && decision > 3)
+            while((decision > -1 && decision < 5))
             {
                 Console.WriteLine("Cuales proyectos desea ver?\n" +
                     "1. Moviles\n" +
                     "2. Webs\n" +
-                    "3. Todos\n");
+                    "3. Todos\n" +
+                    "4. Salir");
 
                 userInput = Console.ReadLine();
                 if (!string.IsNullOrEmpty(userInput))
@@ -335,6 +336,9 @@ namespace TrabajoPractico.Servicios
                         }
 
                         break;
+
+                    case 4:
+                        return;
 
                     default:
                         Console.WriteLine("Opcion invalida");
@@ -432,6 +436,7 @@ namespace TrabajoPractico.Servicios
                 userInput = Console.ReadLine();
             }
 
+
             foreach(ProyectoMovil proyectoMovil in proyectoM)
             {
                 if(proyectoMovil.Nombre == userInput)
@@ -443,7 +448,9 @@ namespace TrabajoPractico.Servicios
                         "4. Plataforma objetivo\n" +
                         "5. Salir");
 
-                    while(desicion < 1 && desicion > 5)
+                    int.TryParse(userInput, out desicion);
+
+                    while(desicion != 1 && desicion != 2 && desicion != 3 && desicion != 4 && desicion != 5)
                     {
                         userInput = Console.ReadLine();
                         if (!string.IsNullOrEmpty(userInput))
@@ -579,6 +586,8 @@ namespace TrabajoPractico.Servicios
                         "3. Estado\n" +
                         "4. Tecnologia principal asociada\n" +
                         "5. Salir");
+
+                    int.TryParse(userInput, out desicion);
 
                     while (desicion < 1 && desicion > 5)
                     {
