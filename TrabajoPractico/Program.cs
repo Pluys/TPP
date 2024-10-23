@@ -11,7 +11,7 @@ namespace TrabajoPractico
             int decision = 10;     //Navegador del menú
             string userInput = ""; //Variable para verificar el parseo y evitar crasheos
 
-            List<Proyecto> proyectos = new List<Proyecto>();
+            //List<Proyecto> proyectos = new List<Proyecto>(); Disfuncional e inservible
             List<ProyectoMovil> proyectoM = new List<ProyectoMovil>();
             List<ProyectoWeb> proyectoW = new List<ProyectoWeb>();
             GuardadoDeProyecto.CargarProyecto(proyectoW, proyectoM);
@@ -57,7 +57,7 @@ namespace TrabajoPractico
 
                     case 3:
                         Console.WriteLine("Opcion 3 - Modificar Proyecto");
-
+                        SysProyectos.ModificarProyecto(proyectoM, proyectoW);
                         break;
 
                     case 4:
