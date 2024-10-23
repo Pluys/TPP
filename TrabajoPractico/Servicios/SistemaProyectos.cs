@@ -336,6 +336,49 @@ namespace TrabajoPractico.Servicios
 
                 }
             }
+        
+
+               
         }
+
+        internal static void QuitarProyecto(List<ProyectoMovil> proyectoM, List<ProyectoWeb> proyectoW)
+        {
+            int opcion;
+            do
+            {
+                Console.WriteLine($"¿Desea eliminar un elemento de la lista Movil (1) o de la lista Web (2)?");
+                opcion = int.Parse( Console.ReadLine() );
+            } while (opcion < 1 || opcion > 2);
+            if (opcion == 1)
+            {
+                int indice;
+                foreach (var proyecto in proyectoM)
+                {
+                    proyecto.VisualizarProyecto();
+                }
+                do
+                {
+                    Console.WriteLine("¿Cuál proyecto desea borrar? Escriba su indice empezando por 1");
+                    indice = int.Parse(Console.ReadLine());
+                } while (indice > proyectoM.Count);
+                proyectoM.RemoveAt(indice - 1);
+
+            }
+            else if (opcion == 2) 
+            {
+                int indice;
+                foreach (var proyecto in proyectoW)
+                {
+                    proyecto.VisualizarProyecto();
+                }
+                do
+                {
+                    Console.WriteLine("¿Cuál proyecto desea borrar? Escriba su indice empezando por 1");
+                    indice = int.Parse(Console.ReadLine());
+                } while (indice > proyectoW.Count);
+                proyectoW.RemoveAt(indice - 1);
+            }
+        }
+
     }
 }

@@ -1,2 +1,2 @@
-Monkey,20,22/10/2024 17:18:43,26/12/2024 17:18:43,Planificacion,WindowsPhone
-Locuras,55,22/10/2024 17:18:54,12/11/2024 23:18:54,endesarrollo,Ios
+Josefina seba Teres,20,23/10/2024 16:58:39,27/12/2024 16:58:39,Planificacion,Android
+Lautaro´s apologies,1,23/10/2024 16:59:59,20/1/2025 10:59:59,Completado,Ios

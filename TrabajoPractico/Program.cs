@@ -52,7 +52,7 @@ namespace TrabajoPractico
 
                     case 2:
                         Console.WriteLine("Opcion 2 - Quitar Proyecto");
-
+                        SysProyectos.QuitarProyecto(proyectoM, proyectoW);
                         break;
 
                     case 3:
