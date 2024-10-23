@@ -360,7 +360,7 @@ namespace TrabajoPractico.Servicios
                 {
                     Console.WriteLine("¿Cuál proyecto desea borrar? Escriba su indice empezando por 1");
                     indice = int.Parse(Console.ReadLine());
-                } while (indice > proyectoM.Count);
+                } while (indice > proyectoM.Count || indice == 0);
                 proyectoM.RemoveAt(indice - 1);
 
             }
@@ -375,7 +375,7 @@ namespace TrabajoPractico.Servicios
                 {
                     Console.WriteLine("¿Cuál proyecto desea borrar? Escriba su indice empezando por 1");
                     indice = int.Parse(Console.ReadLine());
-                } while (indice > proyectoW.Count);
+                } while (indice > proyectoW.Count || indice == 0);
                 proyectoW.RemoveAt(indice - 1);
             }
         }
