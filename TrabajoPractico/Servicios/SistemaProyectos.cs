@@ -351,32 +351,60 @@ namespace TrabajoPractico.Servicios
             } while (opcion < 1 || opcion > 2);
             if (opcion == 1)
             {
-                int indice;
+                string nombreProyecto;
                 foreach (var proyecto in proyectoM)
                 {
                     proyecto.VisualizarProyecto();
                 }
-                do
+                Console.WriteLine("Ingrese el nombre del proyecto que desea eliminar");
+                nombreProyecto = Console.ReadLine();
+                int indice = 0, indiceSeleccionado = 0;
+                foreach (var proyecto in proyectoM)
                 {
-                    Console.WriteLine("¿Cuál proyecto desea borrar? Escriba su indice empezando por 1");
-                    indice = int.Parse(Console.ReadLine());
-                } while (indice > proyectoM.Count || indice == 0);
-                proyectoM.RemoveAt(indice - 1);
+                    indice = indice + 1;
+                    if(nombreProyecto == proyecto.Nombre)
+                    {
+                        indiceSeleccionado = indice;
+                    }
+                }
+
+                for (int i = 1; i <= proyectoM.Count; i++)
+                {
+                    if(i == indiceSeleccionado)
+                    {
+                        proyectoM.RemoveAt(i - 1);
+                    }
+                    
+                }
 
             }
             else if (opcion == 2) 
             {
-                int indice;
+                string nombreProyecto;
                 foreach (var proyecto in proyectoW)
                 {
                     proyecto.VisualizarProyecto();
                 }
-                do
+                Console.WriteLine("Ingrese el nombre del proyecto que desea eliminar");
+                nombreProyecto = Console.ReadLine();
+                int indice = 0, indiceSeleccionado = 0;
+                foreach (var proyecto in proyectoW)
                 {
-                    Console.WriteLine("¿Cuál proyecto desea borrar? Escriba su indice empezando por 1");
-                    indice = int.Parse(Console.ReadLine());
-                } while (indice > proyectoW.Count || indice == 0);
-                proyectoW.RemoveAt(indice - 1);
+                    indice = indice + 1;
+                    if (nombreProyecto == proyecto.Nombre)
+                    {
+                        indiceSeleccionado = indice;
+                    }
+                }
+
+                for (int i = 1; i <= proyectoW.Count; i++)
+                {
+                    if (i == indiceSeleccionado)
+                    {
+                        proyectoW.RemoveAt(i - 1);
+                    }
+
+                }
             }
         }
 
