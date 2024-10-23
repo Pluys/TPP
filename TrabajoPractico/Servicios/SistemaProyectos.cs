@@ -290,7 +290,9 @@ namespace TrabajoPractico.Servicios
             int decision = 0;      //Navegador del menú
             string userInput = ""; //Variable para verificar el parseo y evitar crasheos
 
-            while (decision != 1 && decision != 2 && decision != 3)
+            Console.Clear();
+
+            while(decision < 1 && decision > 3)
             {
                 Console.WriteLine("Cuales proyectos desea ver?\n" +
                     "1. Moviles\n" +
@@ -303,7 +305,7 @@ namespace TrabajoPractico.Servicios
                     int.TryParse(userInput, out decision);
                 }
 
-                switch (decision)
+                switch(decision)
                 {
                     case 1:
                         foreach(ProyectoMovil proyectoMovil in proyectoM)
@@ -334,8 +336,15 @@ namespace TrabajoPractico.Servicios
 
                         break;
 
-                }
-            }
+                    default:
+                        Console.WriteLine("Opcion invalida");
+
+                        break;
+                } //switch
+                Console.WriteLine("\nPresione cualquier tecla para continuar...");
+                Console.ReadKey();
+                Console.Clear();
+            } // while
         
 
                
@@ -408,5 +417,295 @@ namespace TrabajoPractico.Servicios
             }
         }
 
+        internal static void ModificarProyecto(List<ProyectoMovil> proyectoM, List<ProyectoWeb> proyectoW)
+        {
+            int desicion = 0;      //Navegador del menu
+            string userInput = ""; //Variable para verificar el parseo y evitar crasheos
+            Console.Clear();
+            Console.WriteLine("Porfavor, escriba el nombre de el proyecto al cual desea modificar.");
+
+            int enumIndice = 0;
+
+            while (string.IsNullOrEmpty(userInput))
+            {
+                Console.WriteLine("(Debe ser un nombre válido)");
+                userInput = Console.ReadLine();
+            }
+
+            foreach(ProyectoMovil proyectoMovil in proyectoM)
+            {
+                if(proyectoMovil.Nombre == userInput)
+                {
+                    Console.WriteLine("Cual dato desea modificar?\n" +
+                        "1. Nombre\n" +
+                        "2. Cantidad de desarrolladores\n" +
+                        "3. Estado\n" +
+                        "4. Plataforma objetivo\n" +
+                        "5. Salir");
+
+                    while(desicion < 1 && desicion > 5)
+                    {
+                        userInput = Console.ReadLine();
+                        if (!string.IsNullOrEmpty(userInput))
+                        {
+                            int.TryParse(userInput, out desicion);
+                        }
+
+                        switch (desicion)
+                        {
+                            case 1:
+                                Console.WriteLine($"Porfavor, elija el nuevo nombre del proyecto.\n" +
+                                    $"(Actual: {proyectoMovil.Nombre})");
+                                userInput = Console.ReadLine();
+
+                                if (!string.IsNullOrEmpty(userInput))
+                                {
+                                    proyectoMovil.Nombre = userInput;
+                                    Console.WriteLine("Nombre actualizado correctamente.");
+                                }
+                                else
+                                {
+                                    Console.WriteLine("Nombre no detectado, porfavor," +
+                                        " intente nuevamente.");
+                                    desicion = 0;
+                                }
+
+                                Console.ReadKey();
+                                break;
+
+                            case 2:
+                                Console.WriteLine($"Porfavor, especifique la cantidad de desarrolladores" +
+                                    $"a actualizar.\n" +
+                                    $"(Valor actual: {proyectoMovil.CantidadDesarroladores})");
+                                userInput = Console.ReadLine();
+                                int cantidadDesarrolladores = 0;
+
+                                if (string.IsNullOrEmpty(userInput))
+                                {
+                                    if (int.TryParse(userInput, out cantidadDesarrolladores))
+                                    {
+                                        proyectoMovil.CantidadDesarroladores = cantidadDesarrolladores;
+                                        Console.WriteLine("Valor actualizado correctamente.");
+                                    }
+                                    else
+                                    {
+                                        Console.WriteLine("Valor invalido detectado, intente nuevamente.");
+                                        desicion = 0;
+                                    }
+                                }
+                                else
+                                {
+                                    Console.WriteLine("Valor no detectado. Porfavor, intente nuevamente.");
+                                    desicion = 0;
+                                }
+
+                                Console.ReadKey();
+                                break;
+
+                            case 3:
+                                Console.WriteLine($"Porfavor, elija un estado dentro de los existentes.\n" +
+                                    $"0. {EstadoProyecto.Planificacion}\n" +
+                                    $"1. En desarrollo\n" +
+                                    $"2. En pruebas" +
+                                    $"3. {EstadoProyecto.Completado}\n" +
+                                    $"4. {EstadoProyecto.Cancelado}\n" +
+                                    $"(Actual: {proyectoMovil.Estado})");
+
+                                userInput = Console.ReadLine();
+                                enumIndice = 0; ;
+
+                                if (!string.IsNullOrEmpty(userInput) && int.TryParse(userInput, out enumIndice) && enumIndice < 5 && enumIndice > -1)
+                                {
+                                    proyectoMovil.Estado = (EstadoProyecto)enumIndice;
+                                    Console.WriteLine("Estado actualizado correctamente.");
+                                }
+                                else
+                                {
+                                    Console.WriteLine("El valor ingresado no es valido, por favor," +
+                                        " intente nuevamente.");
+                                    desicion = 0;
+                                }
+
+                                break;
+
+                            case 4:
+                                Console.WriteLine($"Porfavor, elija la plataforma objetivo dentro de las" +
+                                    $" existentes.\n" +
+                                    $"0. {Po.Ios}\n" +
+                                    $"1. {Po.Android}\n" +
+                                    $"2. {Po.WindowsPhone}\n" +
+                                    $"(Actual:{proyectoMovil.PlataformasObjetiva})");
+
+                                userInput = Console.ReadLine();
+                                enumIndice = 0; ;
+
+                                if (!string.IsNullOrEmpty(userInput) && int.TryParse(userInput, out enumIndice) && enumIndice < 3 && enumIndice > -1)
+                                {
+                                    proyectoMovil.PlataformasObjetiva = (Po)enumIndice;
+                                    Console.WriteLine("Plataforma objetivo cambiada correctamente.");
+                                }
+                                else
+                                {
+                                    Console.WriteLine("El valor ingresado no es valido, por favor," +
+                                        " intente nuevamente.");
+                                    desicion = 0;
+                                }
+
+                                break;
+
+                            case 5:
+                                
+                                break;
+
+                            default:
+                                Console.WriteLine("Opcion invalida.");
+
+                                break;
+                        } //switch
+                        Console.WriteLine("\nPresione cualquier tecla para continuar...");
+                        Console.ReadKey();
+                        Console.Clear();
+                    } //while
+                } //if
+            } //foreach
+
+            foreach(ProyectoWeb proyectoWeb in proyectoW)
+            {
+                if (proyectoWeb.Nombre == userInput)
+                {
+                    Console.WriteLine("Cual dato desea modificar?\n" +
+                        "1. Nombre\n" +
+                        "2. Cantidad de desarrolladores\n" +
+                        "3. Estado\n" +
+                        "4. Tecnologia principal asociada\n" +
+                        "5. Salir");
+
+                    while (desicion < 1 && desicion > 5)
+                    {
+                        userInput = Console.ReadLine();
+                        if (!string.IsNullOrEmpty(userInput))
+                        {
+                            int.TryParse(userInput, out desicion);
+                        }
+
+                        switch (desicion)
+                        {
+                            case 1:
+                                Console.WriteLine($"Porfavor, elija el nuevo nombre del proyecto.\n" +
+                                    $"(Actual: {proyectoWeb.Nombre})");
+                                userInput = Console.ReadLine();
+
+                                if (!string.IsNullOrEmpty(userInput))
+                                {
+                                    proyectoWeb.Nombre = userInput;
+                                    Console.WriteLine("Nombre actualizado correctamente.");
+                                }
+                                else
+                                {
+                                    Console.WriteLine("Nombre no detectado, porfavor," +
+                                        " intente nuevamente.");
+                                    desicion = 0;
+                                }
+
+                                Console.ReadKey();
+                                break;
+
+                            case 2:
+                                Console.WriteLine($"Porfavor, especifique la cantidad de desarrolladores" +
+                                    $"a actualizar.\n" +
+                                    $"(Valor actual: {proyectoWeb.CantidadDesarroladores})");
+                                userInput = Console.ReadLine();
+                                int cantidadDesarrolladores = 0;
+
+                                if (string.IsNullOrEmpty(userInput))
+                                {
+                                    if (int.TryParse(userInput, out cantidadDesarrolladores))
+                                    {
+                                        proyectoWeb.CantidadDesarroladores = cantidadDesarrolladores;
+                                        Console.WriteLine("Valor actualizado correctamente.");
+                                    }
+                                    else
+                                    {
+                                        Console.WriteLine("Valor invalido detectado, intente nuevamente.");
+                                        desicion = 0;
+                                    }
+                                }
+                                else
+                                {
+                                    Console.WriteLine("Valor no detectado. Porfavor, intente nuevamente.");
+                                    desicion = 0;
+                                }
+
+                                Console.ReadKey();
+                                break;
+
+                            case 3:
+                                Console.WriteLine($"Porfavor, elija un estado dentro de los existentes.\n" +
+                                    $"0. {EstadoProyecto.Planificacion}\n" +
+                                    $"1. En desarrollo\n" +
+                                    $"2. En pruebas" +
+                                    $"3. {EstadoProyecto.Completado}\n" +
+                                    $"4. {EstadoProyecto.Cancelado}\n" +
+                                    $"(Actual: {proyectoWeb.Estado})");
+
+                                userInput = Console.ReadLine();
+                                enumIndice = 0;
+
+                                if (!string.IsNullOrEmpty(userInput) && int.TryParse(userInput, out enumIndice) && enumIndice < 5 && enumIndice > -1)
+                                {
+                                    proyectoWeb.Estado = (EstadoProyecto)enumIndice;
+                                    Console.WriteLine("Estado cambiado correctamente.");
+                                }
+                                else
+                                {
+                                    Console.WriteLine("El valor ingresado no es valido, por favor," +
+                                        " intente nuevamente.");
+                                    desicion = 0;
+                                }
+
+                                break;
+
+                            case 4:
+                                Console.WriteLine($"Porfavor, ingrese la tecnologia principal asociada" +
+                                    $" dentro de las existentes.\n" +
+                                    $"0. {TPA.React}\n" +
+                                    $"1. {TPA.Angular}\n" +
+                                    $"2. {TPA.Vue}\n" +
+                                    $"(Actual: {proyectoWeb.TecnologiaPrincipalAsociada})");
+
+                                userInput = Console.ReadLine();
+                                enumIndice = 0;
+
+                                if (!string.IsNullOrEmpty(userInput) && int.TryParse(userInput, out enumIndice) && enumIndice < 5 && enumIndice > -1)
+                                {
+                                    proyectoWeb.TecnologiaPrincipalAsociada = (TPA)enumIndice;
+                                    Console.WriteLine("Tecnologia principal cambiada correctamente.");
+                                }
+                                else
+                                {
+                                    Console.WriteLine("El valor ingresado no es valido, por favor," +
+                                        " intente nuevamente.");
+                                    desicion = 0;
+                                }
+
+                                break;
+
+                            case 5:
+
+                                break;
+
+                            default:
+                                Console.WriteLine("Opcion invalida.");
+
+                                break;
+                        } //switch
+                        Console.WriteLine("\nPresione cualquier tecla para continuar...");
+                        Console.ReadKey();
+                        Console.Clear();
+                    } //while
+                }
+
+            }
+        }
     }
 }

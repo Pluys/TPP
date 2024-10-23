@@ -28,3 +28,10 @@ C:\Users\lauta\Desktop\Proyecto\TrabajoPractico\obj\Debug\net8.0\refint\TrabajoP
 C:\Users\lauta\Desktop\Proyecto\TrabajoPractico\obj\Debug\net8.0\TrabajoPractico.pdb
 C:\Users\lauta\Desktop\Proyecto\TrabajoPractico\obj\Debug\net8.0\TrabajoPractico.genruntimeconfig.cache
 C:\Users\lauta\Desktop\Proyecto\TrabajoPractico\obj\Debug\net8.0\ref\TrabajoPractico.dll
+C:\Users\estudiante\Desktop\Dev\C# (2do Cuatrimestre)\Practicas\Trabajo practico\TrabajoPractico\obj\Debug\net8.0\TrabajoPractico.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\estudiante\Desktop\Dev\C# (2do Cuatrimestre)\Practicas\Trabajo practico\TrabajoPractico\obj\Debug\net8.0\TrabajoPractico.AssemblyInfoInputs.cache
+C:\Users\estudiante\Desktop\Dev\C# (2do Cuatrimestre)\Practicas\Trabajo practico\TrabajoPractico\obj\Debug\net8.0\TrabajoPractico.AssemblyInfo.cs
+C:\Users\estudiante\Desktop\Dev\C# (2do Cuatrimestre)\Practicas\Trabajo practico\TrabajoPractico\obj\Debug\net8.0\TrabajoPractico.csproj.CoreCompileInputs.cache
+C:\Users\estudiante\Desktop\Dev\C# (2do Cuatrimestre)\Practicas\Trabajo practico\TrabajoPractico\obj\Debug\net8.0\TrabajoPractico.dll
+C:\Users\estudiante\Desktop\Dev\C# (2do Cuatrimestre)\Practicas\Trabajo practico\TrabajoPractico\obj\Debug\net8.0\refint\TrabajoPractico.dll
+C:\Users\estudiante\Desktop\Dev\C# (2do Cuatrimestre)\Practicas\Trabajo practico\TrabajoPractico\obj\Debug\net8.0\TrabajoPractico.pdb

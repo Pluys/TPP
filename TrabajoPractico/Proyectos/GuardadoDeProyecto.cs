@@ -9,7 +9,7 @@ namespace TrabajoPractico.Proyectos
 {
     internal abstract class GuardadoDeProyecto
     {
-        static string guardadoDatosWeb= "guardadoDatosWeb.txt";
+        static string guardadoDatosWeb = "guardadoDatosWeb.txt";
         static string guardadoDatosMovil = "guardadoDatosMovil.txt";
 
 
@@ -52,7 +52,7 @@ namespace TrabajoPractico.Proyectos
                         DateTime fechaInicio = DateTime.Parse(datos[2]);
                         DateTime duracionEstimada = DateTime.Parse(datos[3]);
                         EstadoProyecto estado = (EstadoProyecto)Enum.Parse(typeof(EstadoProyecto), datos[4]);
-                        TPA tecnologiaPrincipalAsociada =(TPA) Enum.Parse(typeof(TPA), datos[5]);
+                        TPA tecnologiaPrincipalAsociada = (TPA) Enum.Parse(typeof(TPA), datos[5]);
 
                         proyectosW.Add(new ProyectoWeb(nombre, cantidadDesarrolladores, fechaInicio, duracionEstimada, estado, tecnologiaPrincipalAsociada));
                         

@@ -61,6 +61,7 @@ namespace TrabajoPractico
                         break;
 
                     case 4:
+                        Console.WriteLine("Opcion 4 - Ver Proyectos");
                         SysProyectos.VerProyectos(proyectoM, proyectoW);
 
                         break;
