@@ -23,7 +23,6 @@ namespace TrabajoPractico.Proyectos
                     writer.WriteLine($"{proyecto.Nombre},{proyecto.CantidadDesarroladores},{proyecto.FechaInicio},{proyecto.DuracionEstimada},{proyecto.Estado},{proyecto.TecnologiaPrincipalAsociada}");
                 }
             }
-            Console.WriteLine("Proyecto guardado exitosamente");
 
             using (StreamWriter writer = new StreamWriter(guardadoDatosMovil))
             {

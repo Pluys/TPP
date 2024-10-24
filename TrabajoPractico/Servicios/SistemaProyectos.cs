@@ -25,7 +25,7 @@ namespace TrabajoPractico.Servicios
             do
             {
                 Console.WriteLine("Es un proyecto: \n" +
-                "1. Movile\n" +
+                "1. Movil\n" +
                 "2. Web ");
                 opcionProyecto = int.Parse(Console.ReadLine());
             } while (opcionProyecto < 1 || opcionProyecto > 2);
