@@ -1,0 +1,85 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36" version="24.8.0">
+  <diagram name="Página-1" id="82EQVXjVI_Ci-kDsay_B">
+    <mxGraphModel dx="880" dy="460" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="E_COBJ1mZbjIxpmFPhO_-9" value="ProyectoWeb" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry y="460" width="230" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="E_COBJ1mZbjIxpmFPhO_-10" value="&lt;div&gt;- TecnologiaPrincipalAsociada: TPA&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="E_COBJ1mZbjIxpmFPhO_-9">
+          <mxGeometry y="26" width="230" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="E_COBJ1mZbjIxpmFPhO_-11" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="E_COBJ1mZbjIxpmFPhO_-9">
+          <mxGeometry y="60" width="230" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="E_COBJ1mZbjIxpmFPhO_-12" value="&lt;div&gt;+ CalcularFechaEstimada(): DateTime&lt;/div&gt;&lt;div&gt;+ VisualizarProyecto(): void&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="E_COBJ1mZbjIxpmFPhO_-9">
+          <mxGeometry y="68" width="230" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="E_COBJ1mZbjIxpmFPhO_-17" value="EstadoProyecto&lt;div&gt;(Enum)&lt;br&gt;&lt;div&gt;-Planificacion&lt;/div&gt;&lt;div&gt;-EnDesarrollo&lt;/div&gt;&lt;div&gt;-EnPruebas&lt;/div&gt;&lt;div&gt;-Completado&lt;/div&gt;&lt;div&gt;-Cancelado&lt;/div&gt;&lt;/div&gt;" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="255" width="100" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="E_COBJ1mZbjIxpmFPhO_-18" value="ProyectoMovil" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="390" y="460" width="220" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="E_COBJ1mZbjIxpmFPhO_-19" value="&lt;div&gt;- PlataformasObjetivo: PO&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="E_COBJ1mZbjIxpmFPhO_-18">
+          <mxGeometry y="26" width="220" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="E_COBJ1mZbjIxpmFPhO_-20" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="E_COBJ1mZbjIxpmFPhO_-18">
+          <mxGeometry y="60" width="220" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="E_COBJ1mZbjIxpmFPhO_-21" value="&lt;div&gt;+ CalcularFechaEstimada(): DateTime&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ VisualizarProyecto(): void&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="E_COBJ1mZbjIxpmFPhO_-18">
+          <mxGeometry y="68" width="220" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="E_COBJ1mZbjIxpmFPhO_-22" value="TPA&lt;div&gt;(Enum)&lt;/div&gt;&lt;div&gt;-React&lt;/div&gt;&lt;div&gt;-Angular&lt;/div&gt;&lt;div&gt;-Vue.js&lt;/div&gt;" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry y="230" width="100" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="E_COBJ1mZbjIxpmFPhO_-23" value="PO&lt;div&gt;(Enum)&lt;/div&gt;&lt;div&gt;-iOS&lt;/div&gt;&lt;div&gt;-Android&lt;/div&gt;&lt;div&gt;-WindowsPhone&lt;/div&gt;" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="510" y="230" width="100" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="E_COBJ1mZbjIxpmFPhO_-24" value="Proyecto" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="170" width="250" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="E_COBJ1mZbjIxpmFPhO_-25" value="- Nombre: string&lt;div&gt;- Estado: EstadoProyecto&lt;/div&gt;&lt;div&gt;- CantidadDesarroladores: int&lt;/div&gt;&lt;div&gt;- FechaInicio: DateTime&lt;/div&gt;&lt;div&gt;- DuracionEstimada: DateTime&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="E_COBJ1mZbjIxpmFPhO_-24">
+          <mxGeometry y="26" width="250" height="94" as="geometry" />
+        </mxCell>
+        <mxCell id="E_COBJ1mZbjIxpmFPhO_-26" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="E_COBJ1mZbjIxpmFPhO_-24">
+          <mxGeometry y="120" width="250" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="E_COBJ1mZbjIxpmFPhO_-27" value="+ VisualizarProyecto(): void&lt;div&gt;+ CalcularFechaEstimada(): DateTime&lt;br&gt;&lt;/div&gt;&lt;div&gt;(Y una version public de cada atributo)&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="E_COBJ1mZbjIxpmFPhO_-24">
+          <mxGeometry y="128" width="250" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="E_COBJ1mZbjIxpmFPhO_-30" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;" edge="1" parent="1" source="E_COBJ1mZbjIxpmFPhO_-24" target="E_COBJ1mZbjIxpmFPhO_-18">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="220" y="390" as="sourcePoint" />
+            <mxPoint x="380" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_COBJ1mZbjIxpmFPhO_-31" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;" edge="1" parent="1" source="E_COBJ1mZbjIxpmFPhO_-24" target="E_COBJ1mZbjIxpmFPhO_-9">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="220" y="390" as="sourcePoint" />
+            <mxPoint x="380" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_COBJ1mZbjIxpmFPhO_-32" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;" edge="1" parent="1" source="E_COBJ1mZbjIxpmFPhO_-23" target="E_COBJ1mZbjIxpmFPhO_-18">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="220" y="320" as="sourcePoint" />
+            <mxPoint x="380" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_COBJ1mZbjIxpmFPhO_-33" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;" edge="1" parent="1" source="E_COBJ1mZbjIxpmFPhO_-22" target="E_COBJ1mZbjIxpmFPhO_-9">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="220" y="320" as="sourcePoint" />
+            <mxPoint x="380" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_COBJ1mZbjIxpmFPhO_-34" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;" edge="1" parent="1" source="E_COBJ1mZbjIxpmFPhO_-17" target="E_COBJ1mZbjIxpmFPhO_-24">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="220" y="200" as="sourcePoint" />
+            <mxPoint x="380" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
