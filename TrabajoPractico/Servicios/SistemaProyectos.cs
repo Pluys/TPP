@@ -441,18 +441,18 @@ namespace TrabajoPractico.Servicios
             {
                 if(proyectoMovil.Nombre == userInput)
                 {
-                    Console.WriteLine("Cual dato desea modificar?\n" +
-                        "1. Nombre\n" +
-                        "2. Cantidad de desarrolladores\n" +
-                        "3. Estado\n" +
-                        "4. Plataforma objetivo\n" +
-                        "5. Salir");
-
-                    int.TryParse(userInput, out desicion);
-
                     while(desicion != 1 && desicion != 2 && desicion != 3 && desicion != 4 && desicion != 5)
                     {
+                        Console.Clear();
+                        Console.WriteLine("Cual dato desea modificar?\n" +
+                            "1. Nombre\n" +
+                            "2. Cantidad de desarrolladores\n" +
+                            "3. Estado\n" +
+                            "4. Plataforma objetivo\n" +
+                            "5. Salir");
                         userInput = Console.ReadLine();
+                        int.TryParse(userInput, out desicion);
+
                         if (!string.IsNullOrEmpty(userInput))
                         {
                             int.TryParse(userInput, out desicion);
@@ -487,7 +487,7 @@ namespace TrabajoPractico.Servicios
                                 userInput = Console.ReadLine();
                                 int cantidadDesarrolladores = 0;
 
-                                if (string.IsNullOrEmpty(userInput))
+                                if (!string.IsNullOrEmpty(userInput))
                                 {
                                     if (int.TryParse(userInput, out cantidadDesarrolladores))
                                     {
@@ -513,7 +513,7 @@ namespace TrabajoPractico.Servicios
                                 Console.WriteLine($"Porfavor, elija un estado dentro de los existentes.\n" +
                                     $"0. {EstadoProyecto.Planificacion}\n" +
                                     $"1. En desarrollo\n" +
-                                    $"2. En pruebas" +
+                                    $"2. En pruebas\n" +
                                     $"3. {EstadoProyecto.Completado}\n" +
                                     $"4. {EstadoProyecto.Cancelado}\n" +
                                     $"(Actual: {proyectoMovil.Estado})");
@@ -580,18 +580,18 @@ namespace TrabajoPractico.Servicios
             {
                 if (proyectoWeb.Nombre == userInput)
                 {
-                    Console.WriteLine("Cual dato desea modificar?\n" +
-                        "1. Nombre\n" +
-                        "2. Cantidad de desarrolladores\n" +
-                        "3. Estado\n" +
-                        "4. Tecnologia principal asociada\n" +
-                        "5. Salir");
-
-                    int.TryParse(userInput, out desicion);
-
-                    while (desicion < 1 && desicion > 5)
+                    while (desicion != 1 && desicion != 2 && desicion != 3 && desicion != 4 && desicion != 5)
                     {
+                        Console.Clear();
+                        Console.WriteLine("Cual dato desea modificar?\n" +
+                            "1. Nombre\n" +
+                            "2. Cantidad de desarrolladores\n" +
+                            "3. Estado\n" +
+                            "4. Tecnologia principal asociada\n" +
+                            "5. Salir");
                         userInput = Console.ReadLine();
+                        int.TryParse(userInput, out desicion);
+
                         if (!string.IsNullOrEmpty(userInput))
                         {
                             int.TryParse(userInput, out desicion);
@@ -626,7 +626,7 @@ namespace TrabajoPractico.Servicios
                                 userInput = Console.ReadLine();
                                 int cantidadDesarrolladores = 0;
 
-                                if (string.IsNullOrEmpty(userInput))
+                                if (!string.IsNullOrEmpty(userInput))
                                 {
                                     if (int.TryParse(userInput, out cantidadDesarrolladores))
                                     {
@@ -652,7 +652,7 @@ namespace TrabajoPractico.Servicios
                                 Console.WriteLine($"Porfavor, elija un estado dentro de los existentes.\n" +
                                     $"0. {EstadoProyecto.Planificacion}\n" +
                                     $"1. En desarrollo\n" +
-                                    $"2. En pruebas" +
+                                    $"2. En pruebas\n" +
                                     $"3. {EstadoProyecto.Completado}\n" +
                                     $"4. {EstadoProyecto.Cancelado}\n" +
                                     $"(Actual: {proyectoWeb.Estado})");
